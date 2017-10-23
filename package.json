@@ -28,12 +28,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdalton308/kindling-react.git"
+    "url": "git+https://github.com/jdalton308/invision-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jdalton308/kindling-react/issues"
+    "url": "https://github.com/jdalton308/invision-app/issues"
   },
-  "homepage": "https://github.com/jdalton308/kindling-react#readme"
+  "homepage": "https://github.com/jdalton308/invision-app#readme"
 }
