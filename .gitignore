@@ -1,0 +1,9 @@
+
+### Installed dependecies ###
+
+/node_modules/*
+
+
+### OS-Generated ###
+
+.DS_Store
