@@ -15,7 +15,6 @@ export default class App extends Component {
       <div id="app">
 
         <header>
-
           <div className="header-logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24">
               <g fill="none" fillRule="evenodd" stroke="#00cc99" strokeLinecap="round" strokeLinejoin="round">
@@ -45,8 +44,6 @@ export default class App extends Component {
             </div>
 
           </div>
-
-
         </header>
 
 
@@ -73,7 +70,34 @@ export default class App extends Component {
 
 
         <main>
-          
+          <div className="post-list">
+
+            <article className="post">
+              <div className="post-base">
+                <img className="post-profile-img" src="/assets/img-thumb-sam.jpg" alt="Sam Profile pic"/>
+                <div className="post-info">
+                  <div className="name-action-row">
+                    <h3 className="name">Sam Soffes</h3>
+                    <button className="icon-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15">
+                        <path fill="none" fillRule="evenodd" stroke="#bec3cc" d="M7.07 4S16 2.5 16 15c-2.857-7.5-8.93-5-8.93-5v4L1 7l6.07-7v4z" strokeLinejoin="round"/>
+                      </svg>
+                    </button>
+                    <button className="icon-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                        <path fill="none" fillRule="evenodd" stroke="#bec3cc" d="M8.5 16S16 10.43 16 5.16 9.345-.514 8.5 4.757C7.655-.514 1-.11 1 5.566 1 11.243 8.5 16 8.5 16z" strokeLinejoin="round"/>
+                      </svg>
+                    </button>
+                    <div className="timestamp">3m</div>
+                  </div>
+                  <div className="post-copy">
+                    How to Get Inspired: the Right Way - Designmodo <a href="bit.ly/1hqgbQA">bit.ly/1hqgbQA</a> Good stuff from <a href="">@designmodo!</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
         </main>
 
 
