@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
   <title>
     0-reply
   </title>
-  <path fill="none" fill-rule="evenodd" stroke="#231F20" d="M7.07 4S16 2.5 16 15c-2.857-7.5-8.93-5-8.93-5v4L1 7l6.07-7v4z" stroke-linejoin="round"/>
+  <path fill="none" fill-rule="evenodd" stroke="#231F20" d="M5.048 2.667S11 1.667 11 10C9.095 5 5.048 6.667 5.048 6.667v2.666L1 4.667 5.048 0v2.667z" stroke-linejoin="round"/>
 </svg>

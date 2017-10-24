@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
   <title>
-    0-heart
+    icon-heart
   </title>
-  <path fill="none" fill-rule="evenodd" stroke="#231F20" d="M8.5 16S16 10.43 16 5.16 9.345-.514 8.5 4.757C7.655-.514 1-.11 1 5.566 1 11.243 8.5 16 8.5 16z" stroke-linejoin="round"/>
+  <path fill="none" fill-rule="evenodd" stroke="#231F20" d="M6 11s5-3.713 5-7.227C11 .26 6.563-.01 6 3.505 5.437-.01 1 .26 1 4.045 1 7.828 6 11 6 11z" stroke-linejoin="round"/>
 </svg>

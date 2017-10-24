@@ -89,6 +89,23 @@ export default class App extends Component {
               <div className="nav-item">
                 VIDEOS
               </div>
+              <div className="layout-switches">
+                <button className="icon-button">
+                  <div className="list-icon">
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                  </div>
+                </button>
+                <button className="icon-button active">
+                  <div className="grid-icon">
+                    <span className="block"></span>
+                    <span className="block"></span>
+                    <span className="block"></span>
+                    <span className="block"></span>
+                  </div>
+                </button>
+              </div>
             </nav>
 
           </div>
@@ -105,13 +122,13 @@ export default class App extends Component {
                   <div className="name-action-row">
                     <h3 className="name">Sam Soffes</h3>
                     <button className="icon-button">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15">
-                        <path fill="none" fillRule="evenodd" stroke="#bec3cc" d="M7.07 4S16 2.5 16 15c-2.857-7.5-8.93-5-8.93-5v4L1 7l6.07-7v4z" strokeLinejoin="round"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                        <path fill="none" fillRule="evenodd" stroke="#bec3cc" d="M5.048 2.667S11 1.667 11 10C9.095 5 5.048 6.667 5.048 6.667v2.666L1 4.667 5.048 0v2.667z" strokeLinejoin="round"/>
                       </svg>
                     </button>
                     <button className="icon-button">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-                        <path fill="none" fillRule="evenodd" stroke="#bec3cc" d="M8.5 16S16 10.43 16 5.16 9.345-.514 8.5 4.757C7.655-.514 1-.11 1 5.566 1 11.243 8.5 16 8.5 16z" strokeLinejoin="round"/>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                        <path fill="none" fillRule="evenodd" stroke="#bec3cc" d="M6 11s5-3.713 5-7.227C11 .26 6.563-.01 6 3.505 5.437-.01 1 .26 1 4.045 1 7.828 6 11 6 11z" strokeLinejoin="round"/>
                       </svg>
                     </button>
                     <div className="timestamp">3m</div>
