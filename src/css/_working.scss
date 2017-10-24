@@ -1,0 +1,207 @@
+
+// Header
+//---------
+header {
+  padding: 14px 12px 12px;
+  background-color: $grey-darker;
+  text-align: right;
+
+  @media (min-width: $mobile) {
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 16px;
+    // text-align: right;
+  }
+
+  .header-logo {
+    display: inline-block;
+    float: left;
+
+    svg {
+      display: inline-block;
+      height: 25px;
+      width: auto;
+    }
+    .logo-copy {
+      display: inline-block;
+      height: 16px;
+      margin-left: 10px;
+    }
+  } // end .header-logo
+
+
+  .header-actions {
+    display: inline-block;
+    
+    .icon-button {
+      display: none;
+
+      @media (min-width: $mobile) {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+        padding: 3px 0 1px;
+
+        svg {
+          display: block;
+          height: 26px;
+          width: auto;
+
+          g {
+            transition: all 0.3s;
+          }
+        }
+
+        &:hover {
+          svg g {
+            stroke: $green-hover;
+          }
+        }
+      }
+        
+    }
+    input {
+      display: none;
+
+      @media (min-width: $mobile) {
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px 24px 5px 12px;
+        margin-right: 20px;
+
+        font-size: 1rem;
+        background: none;
+        border: 1px solid $grey-dark;
+        border-radius: 4px;
+
+        background-image: url('/assets/icon-search.svg'); // TEMP: Move to interactive element
+        background-position: 98% 50%;
+        background-size: 1rem;
+        background-repeat: no-repeat;
+        transition: all 0.5s;
+
+        &:focus {
+          border-color: $grey;
+        }
+      }
+    }
+    .profile-dropdown {
+      display: inline-block;
+      vertical-align: top;
+
+      img {
+        display: block;
+        height: 30px;
+        width: auto;
+        border-radius: 4px;
+      }
+    }
+  } // end .header-actions
+}
+
+
+
+// Hero
+//----------
+.section-hero {
+  // height: 60vh;
+  // min-height: 300px;
+  padding: 80px 16px 0;
+  text-align: center;
+  background-image: url('/assets/img-hero-home.jpg');
+  background-position: center center;
+  background-size: cover;
+
+  .content {
+    display: inline-block;
+    width: 100%;
+    max-width: $container;
+    margin-bottom: 100px;
+
+    .new-post {
+      height: 156px; // temp, for dev
+      background-color: $green;
+      opacity: 0.7;
+      border-radius: 3px;
+    }
+  }
+
+  nav {
+    .nav-wrapper {
+      margin: 0 auto;
+      max-width: $container;
+      text-align: left;
+    }
+    .nav-item {
+      display: inline-block;
+      margin-right: 40px;
+      padding: 10px 8px 20px;
+      border-bottom: 4px solid transparent;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: $grey-light;
+      transition: all 0.3s;
+
+      &:hover {
+        border-bottom-color: $grey-light;
+      }
+      &:last-child {
+        margin: 0;
+      }
+
+      &.active {
+        border-bottom-color: $green;
+        color: $white;
+      }
+    }
+  }
+
+  @media (min-width: $mobile) {
+    // height: 425px;
+    padding: 124px 24px 0;
+  }
+}
+
+
+// Posts
+//---------
+main {
+  padding: 50px 16px;
+  background-color: $white;
+
+  @media (min-width: $mobile) {
+    padding: 50px 16px 100px;
+  }
+}
+
+
+// Footer
+//--------
+footer {
+  padding: 30px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.733rem; // 11px
+  font-weight: 600;
+  border-top: 1px solid $grey-lighter;
+
+  a.footer-link {
+    flex: 0 0 auto;
+    display: inline-block;
+    padding: 0 10px;
+    // font-size: 0.733rem; // 11px
+    // font-weight: 600;
+    color: $green;
+
+    &:hover {
+      color: darken($green, 10%); // TODO: Move to variable
+    }
+  }
+  .footer-copyright {
+    flex: 0 0 auto;
+    display: inline-block;
+    padding: 0 10px;
+    color: $grey;
+  }
+}

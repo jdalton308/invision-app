@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28">
+  <title>
+    icon-search
+  </title>
+  <g fill="none" fill-rule="evenodd" stroke="#44474b" stroke-width="2">
+    <path d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11z"/>
+    <path d="M19.5 20.5L27 27" stroke-linecap="round"/>
+  </g>
+</svg>

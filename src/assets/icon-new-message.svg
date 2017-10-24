@@ -1,31 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="26" viewBox="0 0 31 26">
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""/>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<image id="new_message" data-name="new message" width="31" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAaCAMAAAB4vXe4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABoVBMVEUAzJn///8AzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAzJkAAAAxh9Q/AAAAiXRSTlMAAAZfruX77siAHlDiz3AwFRAjVKb2kQp/8FoBJMTOZOgmBKcZ9EIH1nF9sEtSA+s0/CG7XmczSaga+RLpDyeCuqMX3J8IxubCexbH2FgF86UrLVar9Whg8reaigvgOXZ3iOdzPPFpMZ4is5CGOurdv7IR3634lyztKrh8SIN1Hz3UAijbjD6TlOstL8gAAAABYktHRIqFaHd2AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QoXASABdfNrAwAAAXpJREFUKM910vk3AlEUB/B3SzFomRZkKqREMYmULSFrQrIlQvYtW1myb2H+a2+amE6a7w/3vHM+59335s5DCEckLpFIGT6lZUQ5cGG5olImVyhJPiq1RltV/es1uloK/SW3T28wKjmvq29A6J+DqdFgYt1saULFHKzNLazb7Ki4Q2slhV3WJuS0ox27s0PIodOFnVEKur0Lu8Mt6EYP9m6bkPf09mH39HsFfMCXnc/gECXQn5vfsH9ktMDNxNi4ZGIywM2/Zyo4PZPv8tmQei48v7C4xP0/ejkYWYmuruGli6DAF3NzvdclG5DbNSDe1CkQFd/ahp1dPbaNPVzCln3+4JiCPvAfIjiaZPceE2w9CeV5wm4M4PO1et4Vp3l+ds5OwsuI4IJ7Zhq4ZHhPpkTZ+1+Vg5Ukr+MkKYKbW97TNPd9d3K+/30KFQYeTs1YHp9weda9/He4flUBvOG38/6RgSJOxyOZhDLw+WXBwyriAOlo0in1f6fx8gfcQkGQ/l6SHQAAAABJRU5ErkJggg=="/>
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="33" viewBox="0 0 39 33">
+  <title>
+    icon-new-message
+  </title>
+  <g fill="none" fill-rule="evenodd" stroke="#231F20">
+    <path d="M19.62 20.118h-.81L12.333 26v-5.882h-.81C5.737 20.118 1 15.816 1 10.558 1 5.302 5.736 1 11.524 1h12.952C30.264 1 35 5.3 35 10.56c0 1.3-.29 2.542-.815 3.675" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M38 24.5c0 4.143-3.582 7.5-8 7.5s-8-3.357-8-7.5c0-4.142 3.582-7.5 8-7.5s8 3.358 8 7.5z"/>
+    <path d="M30.036 21v7M34 24.5h-8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 </svg>

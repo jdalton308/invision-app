@@ -22,7 +22,7 @@ main {
 	min-height: 100vh;
 	padding: 33vh 20px 50px;
 	text-align: center;
-	background-color: $light-grey;
+	background-color: $grey-light;
 }
 
 h1,
@@ -65,7 +65,7 @@ label {
 		display: inline-block;
 		margin: 0 0 4px;
 		font-size: 0.8rem;
-		color: $light-grey;
+		color: $grey-light;
 	}
 }
 input[type="text"] {
@@ -86,9 +86,14 @@ button,
 	border: none;
 	border-radius: none;
 	font-family: $sansFamily;
-	font-size: 0.9rem;
 	cursor: pointer;
+
+	&.icon-button {
+		padding: 0;
+		background-color: transparent;
+	}
 }
+
 
 // Icons
 //----------

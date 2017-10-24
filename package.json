@@ -1,5 +1,5 @@
 {
-  "name": "Invision App App",
+  "name": "invision-app-app",
   "version": "1.0.0",
   "description": "React application for Invision code-test",
   "main": "bundle.js",
@@ -11,20 +11,23 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
     "classnames": "^2.2.5",
+    "copy-webpack-plugin": "^4.2.0",
     "css-loader": "^0.25.0",
     "fetch-jsonp": "^1.0.2",
+    "file-loader": "^1.1.5",
     "node-sass": "^3.10.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.6.2",
     "webpack": "^2.0.2",
     "webpack-dev-server": "^1.16.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open --inline"
   },
   "repository": {
     "type": "git",

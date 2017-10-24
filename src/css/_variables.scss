@@ -5,28 +5,26 @@
 //// COLORS ////
 //-------------
 $black:		    #000;
-$grey:		    #666;
-$light-grey:	#aaa;
-$lighter-grey:  #ddd;
-$off-white: 	#FAFAFA;
+$grey-darker:   #262728;
+$grey-dark:   #44474b;
+$grey:		    #70767f;
+$grey-light:  #bec3cc;
+$grey-lighter:  #dee1e5;
+// $lighter-grey:  #dee1e5;
 $white: 		  #FFF;
 
-$green:         #09B246;
-$green-light:   #1BFF6D;
-$red:           #B20700;
+$green:         #00cc99;
+$green-hover:   lighten($green, 20%);
 
 $main-bg: 		$grey;
-$text-color: 	$white;
+$text-color: 	$grey;
 $box-shadow: 	 4px 2px 20px -10px $black;
-$box-shadow-active: 	 4px 2px 20px -14px $black;
 
 
 //// FONTS ////
 //-------------
-$base-font-size: 	20px;
-$sansFamily: 		Arial, sans-serif;
-
-// TODO: Monospace font for ticker, search, and number data
+$base-font-size: 	15px;
+$sansFamily: 		"Open Sans", arial, sans-serif;
 
 
 //// BREAKPOINTS ////
@@ -38,8 +36,8 @@ $desktop:   1200px;
 
 //// LAYOUT ////
 //-------------------
-$container:   800px;
-$container-lg:  1000px;
+$container:   575px;
+// $container-lg:  1000px;
 
 
 //// OTHER ////
