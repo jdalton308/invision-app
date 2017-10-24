@@ -116,22 +116,77 @@ header {
     display: inline-block;
     width: 100%;
     max-width: $container;
+    text-align: left;
+  }
+  .new-post {
+    padding: 40px 30px 24px;
     margin-bottom: 100px;
+    border-radius: 3px;
+    background-color: rgba(0, 204, 153, 0.8);
+    
+    .pseudo-placeholder-input {
+      position: relative;
+      margin-bottom: 30px;
 
-    .new-post {
-      height: 156px; // temp, for dev
-      background-color: $green;
-      opacity: 0.7;
-      border-radius: 3px;
+      input {
+        display: block;
+        padding: 0;
+        border: 0;
+        background: transparent;
+
+        color: $white;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.1em;
+        
+      }
+      .placeholder-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.1em;
+        color: $white;
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    }
+    .media-actions {
+      .icon-button {
+        margin-right: 40px;
+        color: $white;
+        font-size: 0.93rem; // 14px
+        opacity: 0.5;
+        transition: all 0.3s;
+
+        svg {
+          position: relative;
+          top: 1px;
+          display: inline-block;
+          height: 14px;
+          width: auto;
+          margin-right: 10px;
+        }
+      }
+    }
+    @media (min-width: $mobile) {
+      .media-actions {
+        .icon-button {
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
     }
   }
 
   nav {
-    .nav-wrapper {
-      margin: 0 auto;
-      max-width: $container;
-      text-align: left;
-    }
+    // .nav-wrapper {
+    //   margin: 0 auto;
+    //   max-width: $container;
+    //   text-align: left;
+    // }
     .nav-item {
       display: inline-block;
       margin-right: 40px;
