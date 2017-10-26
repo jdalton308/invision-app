@@ -11,8 +11,13 @@ main {
   }
 
   .post {
+    margin-bottom: 24px;
     border: 1px solid $grey-lighter;
     border-radius: 4px;
+
+    &:last-child {
+      margin: 0;
+    }
 
     .post-base {
       display: flex;
@@ -70,6 +75,15 @@ main {
       }
 
     } // end .post-base
+
+    .media-container {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        
+      }
+    }
   } // end .post
 
   @media (min-width: $mobile) {

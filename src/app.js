@@ -1,5 +1,6 @@
 
 import React, {Component} from 'react';
+import { Route } from 'react-router-dom';
 
 import Footer from './components/footer/footer.js';
 import Header from './components/header/header.js';
@@ -7,7 +8,7 @@ import Hero from './components/hero/hero.js';
 import PostList from './components/posts/post-list.js';
 
 
-export default class App extends Component {
+class App extends Component {
 
   constructor(props) {
     super(props);
@@ -23,7 +24,11 @@ export default class App extends Component {
 
         <Hero />
 
-        <PostList />
+        <Route path="/profile" children={({ match }) => (
+          <PostList
+            isProfile={match}
+          />
+        )} />
 
         <Footer />
 
@@ -31,3 +36,6 @@ export default class App extends Component {
 		)
 	}
 }
+
+
+export default App;
