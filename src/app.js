@@ -24,6 +24,7 @@ class App extends Component {
 
         <Hero />
 
+        {/* Route only used here to choose data set of PostList */}
         <Route path="/profile" children={({ match }) => (
           <PostList
             isProfile={match}

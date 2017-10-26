@@ -1,31 +1,14 @@
 
 import React, {Component} from 'react';
 
-import IconCamera from '../icons/icon-camera';
-import IconVidCamera from '../icons/icon-vid-camera';
+import NewPost from './new-post';
 
 
 const HomeHero = (props) => {
   return (
     <div className="content home-hero">
 
-      <div className="new-post">
-        <div className="pseudo-placeholder-input">
-          <input type="text"/>
-          <span className="placeholder-text">What's on your mind?</span>
-        </div>
-
-        <div className="media-actions">
-          <button className="icon-button">
-            <IconCamera />
-            Add Photo
-          </button>
-          <button className="icon-button">
-            <IconVidCamera />
-            Add Video
-          </button>
-        </div>
-      </div>
+      <NewPost />
 
       <nav>
         <div className="nav-item active">

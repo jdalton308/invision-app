@@ -1,8 +1,8 @@
 
-// TEMP
-export const CreateNewPost = function(post) {
+
+export const triggerNewPost = function(post) {
   return {
     type: 'NEW_POST',
-    value: post,
+    post,
   }
 }

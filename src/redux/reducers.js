@@ -5,13 +5,15 @@ import initialData from './initial-state';
 
 function reducer(state = initialData, action) {
 
-  // TEMP
   switch (action.type) {
+
     case 'NEW_POST':
       return {
         ...state,
-        post: action.value
-      };
+        allPosts: [action.post, ...state.allPosts],
+        myPosts: [action.post, ...state.myPosts],
+      }
+
     default:
       return state;
   }

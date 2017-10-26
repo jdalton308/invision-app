@@ -12,6 +12,8 @@ const PostList = ({allPosts, myPosts, isProfile}) => {
 
   const listData = (isProfile) ? myPosts : allPosts;
 
+  console.log('New List data: ', listData);
+
   return (
     <main>
       <div className="post-list">
