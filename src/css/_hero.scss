@@ -1,0 +1,229 @@
+
+// Hero
+//----------
+.section-hero {
+  padding: 0 16px;
+  text-align: center;
+  background-image: url('/assets/img-hero-home.jpg');
+  background-position: center center;
+  background-size: cover;
+
+  .content {
+    display: inline-block;
+    width: 100%;
+    max-width: $container;
+    text-align: left;
+
+    &.profile-hero {
+      text-align: center;
+    }
+    &.home-hero {
+      text-align: left;
+    }
+  }
+
+  // Home Hero
+  //----------
+  .new-post {
+    padding: 44px 30px 27px;
+    margin-bottom: 100px;
+    border-radius: 3px;
+    background-color: rgba(0, 204, 153, 0.8);
+    
+    .pseudo-placeholder-input {
+      position: relative;
+      margin-bottom: 30px;
+
+      input {
+        display: block;
+        padding: 0;
+        border: 0;
+        background: transparent;
+
+        color: $white;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.1em;
+        
+      }
+      .placeholder-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.1em;
+        color: $white;
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    }
+    .media-actions {
+      .icon-button {
+        margin-right: 40px;
+        color: $white;
+        font-size: 0.93rem; // 14px
+        opacity: 0.5;
+        transition: all 0.3s;
+
+        svg {
+          position: relative;
+          top: 1px;
+          display: inline-block;
+          height: 14px;
+          width: auto;
+          margin-right: 10px;
+        }
+      }
+    }
+    @media (min-width: $mobile) {
+      .media-actions {
+        .icon-button {
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  } // end .new-post
+
+
+
+  // Profile Hero
+  //----------
+  .profile-info {
+    margin-bottom: 100px;
+
+    .profile-img {
+      display: block;
+      height: 85px;
+      width: auto;
+      margin: 0 auto 16px;
+      border-radius: 4px;
+    }
+    h2 {
+      margin-bottom: 9px;
+      color: $white;
+    }
+    p {
+      color: $white;
+      opacity: 0.7;
+
+      a {
+        color: $grey-darker;
+      }
+    }
+  }
+
+
+  nav {
+    .nav-item {
+      display: inline-block;
+      margin-right: 40px;
+      padding: 10px 8px 15px;
+      border-bottom: 4px solid transparent;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: $grey-light;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        border-bottom-color: $grey-light;
+      }
+      &:last-child {
+        margin: 0;
+      }
+
+      &.active {
+        border-bottom-color: $green;
+        color: $white;
+      }
+    }
+    .layout-switches {
+      display: inline-block;
+      float: right;
+      
+      .icon-button {
+        vertical-align: top;
+        margin-left: 4px;
+        padding: 14px 5px;
+        opacity: 0.5;
+        transition: all 0.3s;
+
+        &:hover {
+          opacity: 1;
+
+          .list-icon {
+            .line {
+              background-color: $green;
+            }
+          }
+          .grid-icon {
+            .block {
+              background-color: $green;
+            }
+          }
+        }
+
+        &.active {
+          opacity: 1;
+        }
+      }
+      .list-icon {
+        display: inline-block;
+        vertical-align: top;
+
+        .line {
+          width: 9px;
+          height: 1px;
+          margin-bottom: 3px;
+          background-color: $white;
+          transition: all 0.3s;
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+      .grid-icon {
+        width: 10px;
+
+        .block {
+          float: left;
+          vertical-align: top;
+          height: 3px;
+          width: 3px;
+          background-color: $white;
+          margin: 0 3px 3px 0;
+          transition: all 0.3s;
+
+          &:nth-child(even) {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: $mobile) {
+    padding: 0 24px;
+
+    .content {
+      display: inline-block;
+      width: 100%;
+      max-width: $container;
+      text-align: left;
+
+      &.profile-hero {
+        padding-top: 87px;
+        text-align: center;
+      }
+      &.home-hero {
+        padding-top: 124px;
+        text-align: left;
+      }
+    }
+  }
+}

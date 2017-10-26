@@ -1,0 +1,184 @@
+
+// Header
+//---------
+header {
+  padding: 14px 12px 12px;
+  background-color: $grey-darker;
+  text-align: right;
+
+  @media (min-width: $mobile) {
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 16px;
+    // text-align: right;
+  }
+
+  .header-logo {
+    display: inline-block;
+    float: left;
+
+    svg {
+      display: inline-block;
+      height: 25px;
+      width: auto;
+    }
+    .logo-copy {
+      display: inline-block;
+      height: 16px;
+      margin-left: 10px;
+    }
+  } // end .header-logo
+
+
+  .header-actions {
+    display: inline-block;
+    
+    .icon-button {
+      display: none;
+
+      @media (min-width: $mobile) {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+        padding: 3px 0 1px;
+
+        svg {
+          display: block;
+          height: 26px;
+          width: auto;
+
+          g {
+            transition: all 0.3s;
+          }
+        }
+
+        &:hover {
+          svg g {
+            stroke: $green-hover;
+          }
+        }
+      }
+        
+    }
+    input {
+      display: none;
+
+      @media (min-width: $mobile) {
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px 24px 5px 12px;
+        margin-right: 20px;
+
+        font-size: 1rem;
+        background: none;
+        border: 1px solid $grey-dark;
+        border-radius: 4px;
+
+        background-image: url('/assets/icon-search.svg'); // TEMP: Move to interactive element
+        background-position: 98% 50%;
+        background-size: 1rem;
+        background-repeat: no-repeat;
+        transition: all 0.5s;
+
+        &:focus {
+          border-color: $grey;
+        }
+      }
+    }
+    .profile-actions {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      padding-right: 16px;
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        border-top: 4px solid $grey-dark;
+        transition: all 0.2s;
+      }
+
+      &:hover {
+        &:after {
+          border-top-color: $grey;
+        }
+        img {
+          opacity: 0.9;
+        }
+      }
+
+      &.show {
+        &:after {
+          transform: rotate(180deg);
+        }
+        .profile-dropdown {
+          max-height: 105px;
+          transition: max-height 0.3s cubic-bezier(0.46, 0.15, 0.23, 1.01);
+
+          a {
+            opacity: 1;
+            transition: all 0.3s, opacity 0.2s 0.25s;
+          }
+        }
+      }
+
+      img {
+        display: block;
+        height: 30px;
+        width: auto;
+        border-radius: 4px;
+      }
+
+      .profile-dropdown {
+        position: absolute;
+        top: calc(100% + 14px);
+        right: 0;
+        background-color: $grey-darker;
+        text-align: left;
+        border-radius: 4px;
+
+        // animate in
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s 0.2s cubic-bezier(0.46, 0.15, 0.23, 1.01);
+
+        a {
+          display: block;
+          min-width: 120px;
+          padding: 8px 12px;
+          font-size: 0.9rem;
+          font-weight: 300;
+          color: $grey-light;
+          border-bottom: 1px solid $grey-dark;
+          transition: all 0.4s, opacity 0.2s;
+
+          // animate in
+          opacity: 0;
+
+          &:last-child {
+            border: 0;
+          }
+        }
+      }
+
+      @media (min-width: $mobile) {
+        .profile-dropdown {
+          a {
+            &:hover {
+              background-color: $grey-dark;
+            }
+          }
+        }
+      }
+    }
+  } // end .header-actions
+}

@@ -1,0 +1,101 @@
+
+// Posts
+//---------
+main {
+  padding: 50px 16px;
+  background-color: $white;
+
+  .post-list {
+    max-width: $container;
+    margin: 0 auto;
+  }
+
+  .post {
+    border: 1px solid $grey-lighter;
+    border-radius: 4px;
+
+    .post-base {
+      display: flex;
+      padding: 24px 24px 20px;
+
+      .post-profile-img {
+        display: inline-block;
+        flex: 0 0 auto;
+        height: 40px;
+        width: auto;
+        margin-right:  16px;
+        border-radius: 4px;
+      }
+      .post-info {
+        flex: 1;
+
+        .name-action-row {
+          display: flex;
+          align-items: center;
+          margin-bottom: 7px;
+
+          .name {
+            flex: 1;
+            line-height: 1em;
+            margin: 0;
+            color: $grey-dark2;
+          }
+          .icon-button,
+          .timestamp {
+            flex: 0 0 auto;
+          }
+          .icon-button {
+            margin-right: 20px;
+
+            svg {
+              display: block;
+              height: 13px;
+              width: auto;
+            }
+          }
+          .timestamp {
+            font-size: 0.93rem; // 14px
+            color: $grey-light;
+          }
+        } // end .name-action-row
+      } // end .post-info
+
+      .post-copy {
+        line-height: 1.6em;
+        color: $grey;
+
+        a {
+          color: $grey-light;
+        }
+      }
+
+    } // end .post-base
+  } // end .post
+
+  @media (min-width: $mobile) {
+    padding: 50px 16px 100px;
+
+    .post {
+      .name-action-row {
+        .icon-button {
+          svg path {
+            transition: all 0.3s;
+          }
+
+          &:hover {
+            path {
+              stroke: $green;
+            }
+          }
+        }
+      }
+      .post-copy {
+        a {
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+}
