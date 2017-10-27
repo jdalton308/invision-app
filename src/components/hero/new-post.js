@@ -39,7 +39,7 @@ class NewPost extends Component {
     } = this.state;
 
     const post = {
-      id: Math.ceil(Math.random() * 100) + 23, // Obviously not robust, just to avoid collision with previous posts (#1-22)
+      id: 0, // added by reducer
       user: {
         img: '/assets/img-profile-thumb.jpg',
         name: 'Jessica Tuan',

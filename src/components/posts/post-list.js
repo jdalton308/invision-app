@@ -1,7 +1,8 @@
 
 import React, {Component} from 'react';
 import { connect } from 'react-redux'
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 import Post from './post';
 import IconReply from '../icons/icon-reply';
@@ -18,23 +19,33 @@ const PostList = ({allPosts, myPosts, isProfile}) => {
     <main>
       <div className="post-list">
 
-        {
-          listData.map((post) => {
-            const {user, content} = post;
+        <CSSTransitionGroup
+          transitionName="post-fade"
+          transitionAppear={true}
+          transitionAppearTimeout={1500}
+          transitionEnterTimeout={1100}
+          transitionLeaveTimeout={500}
+        >
+          {
+            listData.map((post) => {
+              const {user, content} = post;
 
-            return (
-              <Post
-                key={post.id}
-                name={user.name}
-                profileImg={user.img}
-                timestamp={content.timestamp}
-                copy={content.copy}
-                postImg={content.img}
-                postVideo={content.video}
-              />
-            );
-          })
-        }
+              return (
+                <Post
+                  key={post.id}
+                  id={post.id}
+                  name={user.name}
+                  liked={content.liked}
+                  profileImg={user.img}
+                  timestamp={content.timestamp}
+                  copy={content.copy}
+                  postImg={content.img}
+                  postVideo={content.video}
+                />
+              );
+            })
+          }
+        </CSSTransitionGroup>
 
       </div>
     </main>

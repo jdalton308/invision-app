@@ -1,4 +1,7 @@
 
+// TODO: Combine all posts into one array,
+// - Then must sort the list in the views
+
 const initial = {
   allPosts: [
     {
@@ -8,6 +11,7 @@ const initial = {
         name: 'Sam Soffes',
       },
       content: {
+        liked: false,
         img: false,
         video: false,
         timestamp: '3m',
@@ -21,6 +25,7 @@ const initial = {
         name: 'Meg Robichaud',
       },
       content: {
+        liked: false,
         img: '/assets/img-post-ocean.jpg',
         video: false,
         timestamp: '25m',
@@ -34,6 +39,7 @@ const initial = {
         name: 'Kerem Suer',
       },
       content: {
+        liked: false,
         img: false,
         video: false,
         timestamp: '50m',
@@ -47,6 +53,7 @@ const initial = {
         name: 'Liang Shi',
       },
       content: {
+        liked: false,
         img: false,
         video: false,
         timestamp: '1hr',
@@ -60,6 +67,7 @@ const initial = {
         name: 'Vitor Leal',
       },
       content: {
+        liked: false,
         img: false,
         video: '/assets/img-video-bike.jpg',
         timestamp: '1hr',
@@ -77,6 +85,7 @@ const initial = {
         name: 'Jessica Tuan',
       },
       content: {
+        liked: false,
         img: false,
         video: false,
         timestamp: '3m',
@@ -90,6 +99,7 @@ const initial = {
         name: 'Jessica Tuan',
       },
       content: {
+        liked: false,
         img: '/assets/img-post-ocean.jpg',
         video: false,
         timestamp: '1h',
@@ -103,9 +113,9 @@ const initial = {
         name: 'Pallavi Gupta',
       },
       content: {
+        liked: true,
         img: false,
         video: false,
-        liked: true,
         timestamp: '1h',
         copy: 'Need some reading? 11 free ebooks for designers | Creative Bloq bit.ly/1lE5QDM via @netmag',
       },
@@ -117,6 +127,7 @@ const initial = {
         name: 'Jessica Tuan',
       },
       content: {
+        liked: false,
         img: false,
         video: '/assets/img-post-ocean-rocks.jpg',
         timestamp: '2h',
@@ -130,6 +141,7 @@ const initial = {
         name: 'Jessica Tuan',
       },
       content: {
+        liked: false,
         img: false,
         video: false,
         timestamp: '3h',
@@ -143,6 +155,7 @@ const initial = {
         name: 'Jessica Tuan',
       },
       content: {
+        liked: false,
         img: false,
         video: false,
         timestamp: '3h',
@@ -152,10 +165,11 @@ const initial = {
     {
       id: 16,
       user: {
-        img: '/assets/img-profile-thumb.jpg',
+        img: '/assets/img-thumb-buzz.jpg',
         name: 'Buzz Usborne',
       },
       content: {
+        liked: true,
         img: '/assets/img-post-westy.jpg',
         video: false,
         timestamp: '1d',
@@ -169,6 +183,7 @@ const initial = {
         name: 'Jessica Tuan',
       },
       content: {
+        liked: false,
         img: false,
         video: false,
         timestamp: '1d',
@@ -182,6 +197,7 @@ const initial = {
         name: 'Jessica Tuan',
       },
       content: {
+        liked: false,
         img: false,
         video: false,
         timestamp: '1d',
@@ -191,10 +207,11 @@ const initial = {
     {
       id: 19,
       user: {
-        img: '/assets/img-thumb-sam.jpg',
+        img: '/assets/img-thumb-ed.jpg',
         name: 'Ed Wellbrook',
       },
       content: {
+        liked: true,
         img: false,
         video: false,
         timestamp: '1d',
@@ -208,6 +225,7 @@ const initial = {
         name: 'Jessica Tuan',
       },
       content: {
+        liked: false,
         img: false,
         video: '/assets/img-video-rain.jpg',
         timestamp: '2d',
@@ -221,6 +239,7 @@ const initial = {
         name: 'Jessica Tuan',
       },
       content: {
+        liked: false,
         img: false,
         video: false,
         timestamp: '2d',
@@ -235,6 +254,7 @@ const initial = {
         name: 'Jessica Tuan',
       },
       content: {
+        liked: false,
         img: false,
         video: false,
         timestamp: '2d',

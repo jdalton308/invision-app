@@ -1,0 +1,57 @@
+
+// Fade in/out
+//--------------
+
+.fade-appear {
+  opacity: 0;
+}
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s 1s ease-in;
+}
+
+.fade-enter {
+  opacity: 0;
+  max-height: 0;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  max-height: auto;
+  transition: opacity 0.5s 0.6s ease-in, max-height 0.01s 0.49s;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+.fade-leave.fade-leave-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+
+// Fade in/out
+//--------------
+
+.post-fade-appear {
+  opacity: 0;
+}
+.post-fade-appear.post-fade-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s 1s ease-in;
+}
+
+.post-fade-enter {
+  opacity: 0;
+}
+.post-fade-enter.post-fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s 0.6s ease-in;
+}
+
+.post-fade-leave {
+  opacity: 1;
+}
+.post-fade-leave.post-fade-leave-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}

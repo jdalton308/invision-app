@@ -63,6 +63,35 @@ main {
             color: $grey-light;
           }
         } // end .name-action-row
+
+        .post-liked {
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          transition: max-height 0.2s, margin-top 0.2s, opacity 0.3s 0.2s;
+
+          &.show {
+            max-height: 20px;
+            margin-top: 15px;
+            opacity: 1;
+          }
+
+          svg {
+            display: inline-block;
+            height: 13px;
+            width: auto;
+            margin-right: 6px;
+          }
+          span {
+            position: relative;
+            top: -1px;
+            display: inline-block;
+            vertical-align: baseline;
+            font-size: 0.8rem;
+            line-height: 1em;
+            color: $green;
+          }
+        }
       } // end .post-info
 
       .post-copy {

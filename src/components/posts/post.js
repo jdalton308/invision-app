@@ -1,30 +1,43 @@
 
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
+import { likePost } from '../../redux/actions';
 import IconReply from '../icons/icon-reply';
 import IconHeart from '../icons/icon-heart';
 
 
-const Post = ({name, profileImg, timestamp, copy, postImg, postVideo}) => {
+const Post = ({name, id, liked, profileImg, timestamp, copy, postImg, postVideo, dispatchLike}) => {
   return (
     <article className="post">
       <div className="post-base">
         <img className="post-profile-img" src={profileImg} alt="Sam Profile pic"/>
         <div className="post-info">
+          
           <div className="name-action-row">
             <h3 className="name">{name}</h3>
             <button className="icon-button">
               <IconReply />
             </button>
-            <button className="icon-button">
+            <button
+              className="icon-button"
+              onClick={() => dispatchLike(id)}
+            >
               <IconHeart />
             </button>
             <div className="timestamp">{timestamp}</div>
           </div>
+
           <div className="post-copy">
             {copy}
           </div>
+
+          <div className={`post-liked ${(liked) ? 'show' : ''}`}>
+            <IconHeart fill="#00cc99" />
+            <span>Liked</span>
+          </div>
+
         </div>
       </div>
 
@@ -46,6 +59,8 @@ const Post = ({name, profileImg, timestamp, copy, postImg, postVideo}) => {
 
 Post.propTypes = {
   name: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  liked: PropTypes.bool,
   profileImg: PropTypes.string.isRequired,
   timestamp: PropTypes.string.isRequired,
   copy: PropTypes.string.isRequired,
@@ -60,9 +75,23 @@ Post.propTypes = {
 };
 
 Post.defaultProps = {
+  liked: false,
   postImg: false,
   postVideo: false,
 }
 
 
-export default Post;
+const mapDispatchToProps = (dispatch) => ({
+  dispatchLike: id => {
+    dispatch(likePost(id));
+  }
+})
+
+const connectedPost = connect(
+  null,
+  mapDispatchToProps,
+)(Post);
+
+
+
+export default connectedPost;
