@@ -3,6 +3,7 @@
 // - Then must sort the list in the views
 
 const initial = {
+  useCardLayout: true,
   allPosts: [
     {
       id: 1,
@@ -15,7 +16,7 @@ const initial = {
         img: false,
         video: false,
         timestamp: '3m',
-        copy: 'How to Get Inspired: the Right Way - Designmodo bit.ly/1hqgbQA Good stuff from @designmodo!', // TODO: Make into HTML
+        copy: 'How to Get Inspired: the Right Way - Designmodo <a href="">bit.ly/1hqgbQA</a> Good stuff from <a href="">@designmodo!</a>', // TODO: Make into HTML
       }
     },
     {
@@ -29,7 +30,7 @@ const initial = {
         img: '/assets/img-post-ocean.jpg',
         video: false,
         timestamp: '25m',
-        copy: 'My view this morning is simply beautiful... instagram.com/p/mV0PUrHRwQ/',
+        copy: 'My view this morning is simply beautiful... <a href="">instagram.com/p/mV0PUrHRwQ/</a>',
       }
     },
     {
@@ -43,7 +44,7 @@ const initial = {
         img: false,
         video: false,
         timestamp: '50m',
-        copy: '8 Apps to Turn Your Pipe Dreams Into Prototypes on.mash.to/1oubyu8',
+        copy: '8 Apps to Turn Your Pipe Dreams Into Prototypes <a href="">on.mash.to/1oubyu8</a>',
       },
     },
     {
@@ -57,7 +58,7 @@ const initial = {
         img: false,
         video: false,
         timestamp: '1hr',
-        copy: 'How to get animations out of your head. http://bit.ly/1q7BngO  Funny and useful.',
+        copy: 'How to get animations out of your head. <a href="">http://bit.ly/1q7BngO</a>  Funny and useful.',
       }
     },
     {
@@ -71,7 +72,7 @@ const initial = {
         img: false,
         video: '/assets/img-video-bike.jpg',
         timestamp: '1hr',
-        copy: 'You have to see this bike. It will make your daily commute a absolute joy ride! vimeo.com/p/mV0PUrHRwQ/',
+        copy: 'You have to see this bike. It will make your daily commute a absolute joy ride! <a href="">vimeo.com/p/mV0PUrHRwQ/</a>',
       }
     },
   ],
@@ -89,7 +90,7 @@ const initial = {
         img: false,
         video: false,
         timestamp: '3m',
-        copy: 'How to Get Inspired: the Right Way - Designmodo bit.ly/1hqgbQA Good stuff from @designmodo!', // TODO: Make into HTML
+        copy: 'How to Get Inspired: the Right Way - Designmodo <a href="">bit.ly/1hqgbQA</a> Good stuff from <a href="">@designmodo!</a>', // TODO: Make into HTML
       }
     },
     {
@@ -103,7 +104,7 @@ const initial = {
         img: '/assets/img-post-ocean.jpg',
         video: false,
         timestamp: '1h',
-        copy: 'The them song of small creative shops around the world. http://goo.gl/eFUAzP ',
+        copy: 'The them song of small creative shops around the world. <a href="">http://goo.gl/eFUAzP</a> ',
       }
     },
     {
@@ -117,7 +118,7 @@ const initial = {
         img: false,
         video: false,
         timestamp: '1h',
-        copy: 'Need some reading? 11 free ebooks for designers | Creative Bloq bit.ly/1lE5QDM via @netmag',
+        copy: 'Need some reading? 11 free ebooks for designers | Creative Bloq <a href="">bit.ly/1lE5QDM</a> via <a href="">@netmag</a>',
       },
     },
     {
@@ -131,7 +132,7 @@ const initial = {
         img: false,
         video: '/assets/img-post-ocean-rocks.jpg',
         timestamp: '2h',
-        copy: 'Nothing like a walk on the beach to clear your mind instagram.com/p/mV0PUrHRwQ/',
+        copy: 'Nothing like a walk on the beach to clear your mind <a href="">instagram.com/p/mV0PUrHRwQ/</a>',
       }
     },
     {
@@ -145,7 +146,7 @@ const initial = {
         img: false,
         video: false,
         timestamp: '3h',
-        copy: '“…creative people are confident in only one thing: their own doubt.” - @johnmaeda on doubt and hope: bit.ly/21E34FGM',
+        copy: '“…creative people are confident in only one thing: their own doubt.” - <a href="">@johnmaeda</a> on doubt and hope: <a href="">bit.ly/21E34FGM</a>',
       }
     },
     {
@@ -159,7 +160,7 @@ const initial = {
         img: false,
         video: false,
         timestamp: '3h',
-        copy: 'Don\'t let yourself be controlled by three things: People, money and your past experiences. #lifelessons',
+        copy: 'Don\'t let yourself be controlled by three things: People, money and your past experiences. <a href="">#lifelessons</a>',
       }
     },
     {
@@ -173,7 +174,7 @@ const initial = {
         img: '/assets/img-post-westy.jpg',
         video: false,
         timestamp: '1d',
-        copy: 'You have to see this bike. It will make your daily commute a absolute joy ride! vimeo.com/p/mV0PUrHRwQ/',
+        copy: 'You have to see this bike. It will make your daily commute a absolute joy ride! <a href="">vimeo.com/p/mV0PUrHRwQ/</a>',
       }
     },
     {
@@ -201,7 +202,7 @@ const initial = {
         img: false,
         video: false,
         timestamp: '1d',
-        copy: 'I wrote some thoughts about the flat design trend and where interaction design is headed. “Post Flat Design” - bit.ly/1lE5QDM',
+        copy: 'I wrote some thoughts about the flat design trend and where interaction design is headed. “Post Flat Design” - <a href="">bit.ly/1lE5QDM</a>',
       }
     },
     {
@@ -215,7 +216,7 @@ const initial = {
         img: false,
         video: false,
         timestamp: '1d',
-        copy: '#freelancers will enjoy @WDTrends for graphic and web design tips and inspiration.',
+        copy: '<a href="">#freelancers</a> will enjoy <a href="">@WDTrends</a> for graphic and web design tips and inspiration.',
       }
     },
     {
@@ -229,7 +230,7 @@ const initial = {
         img: false,
         video: '/assets/img-video-rain.jpg',
         timestamp: '2d',
-        copy: 'We don’t get this here very often... instagram.com/p/mV0PUrHRwQ/',
+        copy: 'We don’t get this here very often... <a href="">instagram.com/p/mV0PUrHRwQ/</a>',
       }
     },
     {
@@ -243,7 +244,7 @@ const initial = {
         img: false,
         video: false,
         timestamp: '2d',
-        copy: 'Can anything save the world\'s most reviled typeface? Comic Sans gets a makeover: http://f-st.co/Br7JjwC ',
+        copy: 'Can anything save the world\'s most reviled typeface? Comic Sans gets a makeover: <a href="">http://f-st.co/Br7JjwC</a> ',
       }
     },
 
@@ -258,7 +259,7 @@ const initial = {
         img: false,
         video: false,
         timestamp: '2d',
-        copy: '70 logos in 7 seconds that took 7 years to make: http://ow.ly/vyuAc',
+        copy: '70 logos in 7 seconds that took 7 years to make: <a href="">http://ow.ly/vyuAc</a>',
       }
     },
 

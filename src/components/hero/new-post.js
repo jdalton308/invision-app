@@ -52,8 +52,6 @@ class NewPost extends Component {
       }
     };
 
-    console.log('new post: ', post);
-
     return post;
   }
 

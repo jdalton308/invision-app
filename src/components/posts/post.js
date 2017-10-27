@@ -17,20 +17,22 @@ const Post = ({name, id, liked, profileImg, timestamp, copy, postImg, postVideo,
           
           <div className="name-action-row">
             <h3 className="name">{name}</h3>
-            <button className="icon-button">
-              <IconReply />
-            </button>
-            <button
-              className="icon-button"
-              onClick={() => dispatchLike(id)}
-            >
-              <IconHeart />
-            </button>
-            <div className="timestamp">{timestamp}</div>
+
+            <div className="actions">
+              <button className="icon-button">
+                <IconReply />
+              </button>
+              <button
+                className="icon-button"
+                onClick={() => dispatchLike(id)}
+              >
+                <IconHeart />
+              </button>
+              <div className="timestamp">{timestamp}</div>
+            </div>
           </div>
 
-          <div className="post-copy">
-            {copy}
+          <div className="post-copy" dangerouslySetInnerHTML={{__html: copy}}>
           </div>
 
           <div className={`post-liked ${(liked) ? 'show' : ''}`}>

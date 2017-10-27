@@ -13,3 +13,10 @@ export const likePost = function(id) {
     id,
   }
 }
+
+export const setCardLayout = function(bool) {
+  return {
+    type: 'SET_CARD_LAYOUT',
+    useCardLayout: bool,
+  }
+}

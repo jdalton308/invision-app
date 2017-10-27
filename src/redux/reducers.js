@@ -10,6 +10,9 @@ function reducer(state = initialData, action) {
 
   switch (action.type) {
 
+
+    // Create new post
+    //--------
     case 'NEW_POST':
       action.post.id = nextId++;
       return {
@@ -19,6 +22,9 @@ function reducer(state = initialData, action) {
       }
       break;
 
+
+    // Like a post
+    //--------
     case 'LIKE_POST':
       const newMyPosts = state.myPosts.map((post) => {
         if (post.id === action.id) {
@@ -35,10 +41,25 @@ function reducer(state = initialData, action) {
       });
 
       return {
+        ...state,
         allPosts: newAllPosts,
         myPosts: newMyPosts
       };
+      break;
 
+
+    // Toggle the card/list layout
+    //--------
+    case 'SET_CARD_LAYOUT':
+      return {
+        ...state,
+        useCardLayout: action.useCardLayout
+      };
+      break;
+
+
+    // Default
+    //--------
     default:
       return state;
   }

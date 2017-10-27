@@ -9,15 +9,13 @@ import IconReply from '../icons/icon-reply';
 import IconHeart from '../icons/icon-heart';
 
 
-const PostList = ({allPosts, myPosts, isProfile}) => {
+const PostList = ({useCards, allPosts, myPosts, isProfile}) => {
 
   const listData = (isProfile) ? myPosts : allPosts;
 
-  console.log('New List data: ', listData);
-
   return (
     <main>
-      <div className="post-list">
+      <div className={`post-list ${(useCards) ? 'cards' : 'list'}`}>
 
         <CSSTransitionGroup
           transitionName="post-fade"
@@ -47,6 +45,10 @@ const PostList = ({allPosts, myPosts, isProfile}) => {
           }
         </CSSTransitionGroup>
 
+        <button className="load-more icon-button">
+          LOAD MORE
+        </button>
+
       </div>
     </main>
   );
@@ -55,6 +57,7 @@ const PostList = ({allPosts, myPosts, isProfile}) => {
 
 const mapStateToProps = (state) => {
   return {
+    useCards: state.useCardLayout,
     allPosts: state.allPosts,
     myPosts: state.myPosts,
   }

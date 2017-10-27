@@ -2,18 +2,82 @@
 // Posts
 //---------
 main {
+  min-height: 50vh;
   padding: 50px 16px;
   background-color: $white;
 
   .post-list {
     max-width: $container;
     margin: 0 auto;
+
+    .load-more {
+      display: block;
+      margin: 50px auto 0;
+      font-weight: 600;
+      font-size: 0.8rem;
+      color: $grey-light;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    &.cards {
+      text-align: center;
+
+      > span {
+        display: block;
+        column-count: 2;
+        column-gap: 24px;
+      }
+
+      .post {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 24px;
+
+        .post-base {
+          position: relative;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          .post-profile-img {
+            height: 60px;
+            width: auto;
+            margin: 0 0 16px;
+          }
+          .post-info {
+            width: 100%;
+
+            .name-action-row {
+              margin-bottom: 10px;
+            }
+
+            .actions {
+              position: absolute;
+              top: 12px;
+              right: 16px;
+
+              .icon-button {
+                margin-right: 12px;
+              }
+            }
+            .post-copy {
+              font-size: 0.92rem;
+            }
+          }
+        }
+      }
+    } // end .cards
   }
 
   .post {
     margin-bottom: 24px;
     border: 1px solid $grey-lighter;
     border-radius: 4px;
+    transition: all 0.4s;
 
     &:last-child {
       margin: 0;
@@ -30,6 +94,7 @@ main {
         width: auto;
         margin-right:  16px;
         border-radius: 4px;
+        transition: all 0.4s;
       }
       .post-info {
         flex: 1;
@@ -45,22 +110,23 @@ main {
             margin: 0;
             color: $grey-dark2;
           }
-          .icon-button,
-          .timestamp {
+          .actions {
             flex: 0 0 auto;
-          }
-          .icon-button {
-            margin-right: 20px;
 
-            svg {
-              display: block;
-              height: 13px;
-              width: auto;
+            .icon-button {
+              margin-right: 20px;
+
+              svg {
+                display: block;
+                height: 13px;
+                width: auto;
+              }
             }
-          }
-          .timestamp {
-            font-size: 0.93rem; // 14px
-            color: $grey-light;
+            .timestamp {
+              display: inline-block;
+              font-size: 0.93rem; // 14px
+              color: $grey-light;
+            }
           }
         } // end .name-action-row
 
@@ -106,6 +172,8 @@ main {
     } // end .post-base
 
     .media-container {
+      cursor: pointer;
+
       img {
         display: block;
         width: 100%;
