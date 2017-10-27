@@ -7,7 +7,6 @@ import ProfileHero from './profile-hero.js';
 import HomeHero from './home-hero.js';
 
 
-
 const Hero = (props) => {
   return (
     <section className="section-hero">

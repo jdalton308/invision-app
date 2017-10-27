@@ -14,12 +14,10 @@ footer {
     flex: 0 0 auto;
     display: inline-block;
     padding: 0 10px;
-    // font-size: 0.733rem; // 11px
-    // font-weight: 600;
     color: $green;
 
     &:hover {
-      color: darken($green, 10%); // TODO: Move to variable
+      color: darken($green, 10%);
     }
   }
   .footer-copyright {

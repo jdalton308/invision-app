@@ -7,3 +7,8 @@
 ### OS-Generated ###
 
 .DS_Store
+
+
+### Project ###
+
+/build/*
