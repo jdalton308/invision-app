@@ -13,7 +13,7 @@ module.exports = {
 	entry: SRC_DIR + '/index.js',
 	output: {
 		path: BUILD_DIR,
-		// path: './',
+		publicPath: '/',
 		filename: 'bundle.js'
 	},
 	module: {
@@ -48,7 +48,14 @@ module.exports = {
 						name: 'images/[hash]-[name].[ext]'
 					} 
 				}]
-			}
+			},
+      {
+        test: /\.html$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]'
+        }
+      }
 		],
 	},
   plugins: [

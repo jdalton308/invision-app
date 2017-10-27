@@ -7,6 +7,8 @@ import Header from './components/header/header.js';
 import Hero from './components/hero/hero.js';
 import PostList from './components/posts/post-list.js';
 
+import '../index.html'; // easiest way to get webpack to serve it
+
 
 class App extends Component {
 

@@ -3,7 +3,7 @@
 // - Then must sort the list in the views
 
 const initial = {
-  useCardLayout: true,
+  useCardLayout: false,
   allPosts: [
     {
       id: 1,
