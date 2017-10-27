@@ -1,4 +1,4 @@
-#Invision Application App
+# Invision Application App
 
 
 ## Heroku Deployment
@@ -36,11 +36,11 @@ Hopefully it is obvious that this is more of a prototype than something that wou
 - Creating a post (though without the ability to insert HTML or media files)
 - Liking a post
 - Navigating to the profile page (through the profile drop-down in the header, and back through the brand logo)
-- Toggle the layout between a grid and list
-- Hover effects across all icon-based buttons
+- A Subtle animation when navigating between home and profile pages
+- Toggling the layout between a grid and list
 
 
-I think that this still omits a couple large items, though, so in case these are concerns, here is how I woiuld implement the missing interactions:
+I think that this still omits a few large items, though, so in case these are concerns, here is how I woiuld implement the missing interactions:
 - _Filtering by Video/Image_: This would have been done within the `post-list.js` component, likely just with a single reducer function.
 - _Video Player_: I was picturing a click on a video to trigger a video player that would expand from the post out to be a modal, sitting on top of the page. The player would have been a simple HTML5 player, and would have used the HTML5 and JS api to start, control, and close the video.
 - _Image Focus_: Like the video, I envisioned clicking on an image to trigger a material-style expansion our to a modal with an enlarged, or full-size, view of the image.
